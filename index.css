@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(170, 182, 240);
+  height: 100vh;
+  width: 100vw;
+  padding: 0.5em;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.github-btn {
+  background-color: transparent !important;
+  border-radius: 0.2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.github-btn img {
+  padding: 0 0.2em;
+}
+
+.github-btn:hover {
+  transition: all 400ms ease-in-out;
+  background-color: rgba(255, 255, 255, 0.136) !important;
+  box-shadow: 5px 5px 5px #a7b6ff;
+}
+
+.github-btn:focus {
+  box-shadow: 2px 2px 2px #a7b6ff;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"); */
+.home-main .home-heading {
+  font-family: "Yatra One", cursive;
+  font-size: 6em;
+  cursor: default;
+}
+
+.home-main .select-options-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-options-div button {
+  /* background-color: rgb(170 182 240); */
+  background-color: rgb(137 157 255) !important;
+  outline: none;
+  border: none;
+  text-transform: none;
+  color: none;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-weight: 500;
+
+  font-size: 1.3em;
+  border-radius: 0.1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #000;
+  box-shadow: 1px 1px 5px rgb(120 131 187);
+}
+
+.select-options-div button:hover {
+  transform: all 500ms ease-in;
+  background-color: rgb(170 182 240);
+  box-shadow: 6px 4px 10px #a7b6ff;
+}
+
+.footer-main {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  /* background-color: #232323; */
+  background-color: rgb(38, 38, 38);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  padding: 0.1em 0;
+  cursor: default;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-main a:hover {
+  transition: all 500ms ease-in-out;
+  text-decoration: underline;
+  color: rgb(165, 163, 163);
+}
