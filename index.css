@@ -12,11 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .App {
   text-align: center;
   background-color: rgb(170, 182, 240);
@@ -25,13 +20,14 @@ code {
   padding: 0.5em;
 }
 
-.header-main {
+/* HEADER */
+.App header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.github-btn {
+.App header .github-btn {
   background-color: transparent !important;
   border-radius: 0.2em;
 
@@ -42,21 +38,22 @@ code {
   font-weight: 500 !important;
 }
 
-.github-btn img {
+.App header .github-btn img {
   padding: 0 0.2em;
 }
 
-.github-btn:hover {
+.App header .github-btn:hover {
   transition: all 400ms ease-in-out;
   background-color: rgba(255, 255, 255, 0.136) !important;
   box-shadow: 5px 5px 5px #a7b6ff;
 }
 
-.github-btn:focus {
+.App header .github-btn:focus {
   box-shadow: 2px 2px 2px #a7b6ff;
 }
 
-.home-main {
+/* MAIN SECTION  */
+.App section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,19 +61,18 @@ code {
   height: 90vh;
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"); */
-.home-main .home-heading {
+.App section .home-heading {
   font-family: "Yatra One", cursive;
   font-size: 6em;
   cursor: default;
 }
 
-.home-main .select-options-div {
+.App section .select-options-div {
   display: flex;
   flex-direction: column;
 }
 
-.select-options-div button {
+.App section .select-options-div button {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -84,10 +80,9 @@ code {
   font-size: 1em;
   letter-spacing: 1px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #000;
   cursor: pointer;
-  border: 3px solid;
   padding: 0.6em 1.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
     5px 5px 0px 0px;
@@ -103,23 +98,24 @@ code {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.select-options-div button:hover {
-  background-color: #cfd8ff;
-}
-
-.select-options-div button:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-.select-options-div button img {
+.App section .select-options-div button img {
   height: 2em;
   margin: 0;
   padding: 0 0.5em 0 0;
 }
 
-.footer-main {
+.App section .select-options-div button:hover {
+  background-color: #cfd8ff;
+}
+
+.App section .select-options-div button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+/* FOOTER  */
+.App footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -135,12 +131,12 @@ code {
   cursor: default;
 }
 
-.footer-main a {
+.App footer a {
   text-decoration: none;
   color: #fff;
 }
 
-.footer-main a:hover {
+.App footer a:hover {
   transition: all 500ms ease-in-out;
   text-decoration: underline;
   color: rgb(165, 163, 163);
