@@ -77,30 +77,46 @@ code {
 }
 
 .select-options-div button {
-  /* background-color: rgb(170 182 240); */
-  background-color: rgb(137 157 255) !important;
-  outline: none;
-  border: none;
-  text-transform: none;
-  color: none;
-  margin-bottom: 1em;
-  padding: 1em;
-  font-weight: 500;
-
-  font-size: 1.3em;
-  border-radius: 0.1em;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 1.5px solid #000;
-  box-shadow: 1px 1px 5px rgb(120 131 187);
+  justify-content: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.6em 1.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-weight: 600;
+  margin-bottom: 1em;
+  background-color: #ffffffab;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .select-options-div button:hover {
-  transform: all 500ms ease-in;
-  background-color: rgb(170 182 240);
-  box-shadow: 6px 4px 10px #a7b6ff;
+  background-color: #cfd8ff;
+}
+
+.select-options-div button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.select-options-div button img {
+  height: 2em;
+  margin: 0;
+  padding: 0 0.5em 0 0;
 }
 
 .footer-main {
@@ -109,7 +125,6 @@ code {
   width: 100%;
   left: 0;
   text-align: center;
-  /* background-color: #232323; */
   background-color: rgb(38, 38, 38);
   color: #fff;
   display: flex;
