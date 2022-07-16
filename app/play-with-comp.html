@@ -3,13 +3,87 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>🙍‍♂️ vs 🤖</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./play-with-comp.css" />
+
+    <!-- Google Font  -->
+    <!-- 👉 Titillium Web -->
+    <link
+      hre="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 👉 Bebas Neue  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>🙍‍♂️ vs 🤖</title>
   </head>
   <body>
-    <h2>Play with computer</h2>
-    <script src="./play-with-comp.js"></script>
+    <section class="Main">
+      <footer>
+        Made with 🧡 by&nbsp;
+        <a
+          target="_blank"
+          href="https://www.instagram.com/himanshu.codes_/"
+          rel="noreferrer"
+        >
+          Himanshu
+        </a>
+      </footer>
+
+      <div class="controls">
+        <div class="ctrl-rock" id="rockBtn">
+          <img
+            src="https://img.icons8.com/hands/100/000000/experimental-forward-punch-hands.png"
+          />
+        </div>
+        <div class="ctrl-scissor" id="scissorBtn">
+          <img
+            src="https://img.icons8.com/hands/100/000000/experimental-hand-scissors-hands.png"
+          />
+        </div>
+        <div class="ctrl-paper" id="paperBtn">
+          <img
+            src="https://img.icons8.com/hands/100/000000/experimental-stop-gesture-hands.png"
+          />
+        </div>
+      </div>
+
+      <section class="main-frame">
+        <div class="player_Vid">
+          <video autoplay muted>
+            <source src="../assets/stone.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="computer_Vid">
+          <video autoplay muted>
+            <source src="../assets/paper.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="score-board">
+        <div class="computer_score">
+          Computer
+          <span>0</span>
+        </div>
+
+        <div class="player_score">
+          You
+          <span>0</span>
+        </div>
+      </section>
+
+      <section class="score-card">
+        <div class="message won">You loose !</div>
+        <div class="play-again" id="playAgainBtn">Play Again</div>
+      </section>
+    </section>
   </body>
+  <script src="./play-with-comp.js"></script>
 </html>
